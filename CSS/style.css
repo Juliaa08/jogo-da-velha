@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 42px;
+  color: rgb(127, 167, 151);
+}
+
+/*botões*/
+#buttons-container {
+  margin-bottom: 20px;
+}
+#buttons-container button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 0 13px;
+  background-color: rgb(107, 124, 102);
+  color: aliceblue;
+}
+
+/*jogo*/
+#container {
+  width: 300px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*Como centralizar uma div na tela*/
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  border: 5px solid rgb(0, 0, 0);
+  height: 100px;
+  box-sizing: border-box;
+  flex: 1 1 33%; /*garanti as 3 divs por linha */
+}
+
+#block1,
+#block2,
+#block3 {
+  border-top: none;
+}
+
+#block1,
+#block4,
+#block7 {
+  border-left: none;
+}
+
+#block7,
+#block8,
+#block9 {
+  border-bottom: none;
+}
+
+#block3,
+#block6,
+#block9 {
+  border-right: none;
+}
+
+.x {
+  font-size: 65px;
+  color: rgb(77, 82, 131);
+  display: inline-block;
+}
+
+.o {
+  width: 48px;
+  height: 50px;
+  border: 5px solid rgb(136, 116, 78);
+  display: inline-block;
+  border-radius: 50%;
+}
+/*placar*/
+
+#scoreboard-container {
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#x-scoreboard {
+  color: rgb(77, 82, 131);
+}
+
+#o-scoreboard {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgb(136, 116, 78);
+}
+
+.score-box {
+  display: inline-block;
+}
+
+/*mensagem*/
+
+#message p {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 218px;
+  left: 0;
+  right: 0;
+  width: 500px;
+  background-color: rgb(165, 84, 84);
+  font-size: 50px;
+  color: aquamarine;
+  padding: 26px;
+  border-radius: 4%;
+}
+
+.hide {
+display: none !important;
+
+}
+
